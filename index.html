@@ -27,13 +27,19 @@
             font-size: 18px;
             font-weight: bold;
             color: white;
-            border: none;
+            text-decoration: none;
             border-radius: 8px;
+            display: inline-block;
+            text-align: center;
             cursor: pointer;
         }
         .btn-ahyeon { background-color: #8A2BE2; }
         .btn-asa { background-color: #2E8B57; }
         .btn-jennie { background-color: #1E90FF; }
+        
+        .btn:hover {
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
@@ -41,14 +47,14 @@
     <h1>Benvenuto nel mio sito web</h1>
 
     <div class="button-container">
-        <!-- Bottone Ahyeon con link Instagram -->
-        <button class="btn btn-ahyeon" onclick="location.href='https://www.instagram.com/ahyeon.bm.private?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='">Ahyeon</button>
+        <!-- Ahyeon -->
+        <a href="https://www.instagram.com/ahyeon.bm.private?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-ahyeon" target="_blank">Ahyeon</a>
         
-        <!-- Bottone Asa -->
-        <button class="btn btn-asa" onclick="location.href='asa.html'">Asa</button>
+        <!-- Asa -->
+        <a href="asa.html" class="btn btn-asa">Asa</a>
         
-        <!-- Bottone Jennie con link Instagram -->
-        <button class="btn btn-jennie" onclick="location.href='https://www.instagram.com/jennie_kim_blk_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='">Jennie</button>
+        <!-- Jennie -->
+        <a href="https://www.instagram.com/jennie_kim_blk_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-jennie" target="_blank">Jennie</a>
     </div>
 
 </body>
