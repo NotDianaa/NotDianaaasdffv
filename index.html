@@ -1,170 +1,76 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Not_Diana</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
 
-<style>
-* { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body { font-family:'Roboto',sans-serif; background:#000; color:#fff; overflow-x:hidden; }
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
 
-#bg-video { position:fixed; width:100%; height:100%; object-fit:cover; z-index:-2; opacity:0.6; }
-#tsparticles { position:fixed; width:100%; height:100%; z-index:-1; }
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-header { padding:20px; text-align:center; background:rgba(0,0,0,0.6); }
-.logo { font-family:'Press Start 2P'; color:#ff1f1f; font-size:28px; text-shadow:0 0 15px red; }
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
 
-.hero { padding:140px 20px; text-align:center; border-bottom:1px solid rgba(255,0,0,0.2); }
-.hero h1 { font-family:'Press Start 2P'; font-size:42px; color:#ff1f1f; animation:glow 3s infinite alternate; }
-.hero p { color:#ccc; margin-top:10px; }
+        /* Colori dei bottoni */
+        .btn-ahyeon {
+            background-color: #8A2BE2; /* Viola */
+        }
 
-@keyframes glow { from { text-shadow:0 0 10px red; } to { text-shadow:0 0 40px red; } }
+        .btn-asa {
+            background-color: #2E8B57; /* Verde */
+        }
 
-.projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; padding:60px 20px; }
-
-.card { background:rgba(0,0,0,0.85); border-radius:18px; padding:20px; text-align:center; border:1px solid #330000; transition:0.4s; }
-.card:hover { transform:translateY(-6px) scale(1.02); box-shadow:0 0 30px red; }
-.card h3 { color:#ff1f1f; font-family:'Press Start 2P'; font-size:14px; }
-.card p { color:#aaa; margin:10px 0; }
-.card img { width:100%; height:160px; object-fit:cover; border-radius:10px; margin-bottom:10px; }
-
-.card a { display:block; margin:6px 0; padding:10px; border-radius:8px; text-decoration:none; font-weight:bold; color:#000; }
-.btn1 { background:#ff1f1f; }
-.btn2 { background:#ff9300; }
-.btn3 { background:#8f1fff; }
-.btn4 { background:#22c55e; }
-.btn5 { background:#06b6d4; }
-.btn6 { background:#facc15; }
-
-.terminal { background:#000; border:1px solid red; padding:20px; margin:60px auto; max-width:900px; font-family:'Roboto Mono'; color:#0f0; box-shadow:0 0 20px red; }
-footer { text-align:center; padding:30px; color:#888; }
-</style>
+        .btn-jennie {
+            background-color: #1E90FF; /* Blu */
+        }
+    </style>
 </head>
-
 <body>
 
-<video id="bg-video" autoplay loop muted>
-  <source src="https://motionbgs.com/abstract-dna/video.mp4">
-</video>
+    <h1>Benvenuto nel mio sito web</h1>
 
-<div id="tsparticles"></div>
-
-<header>
-  <div class="logo">DIANA</div>
-</header>
-
-<section class="hero">
-  <h1>Diana – Dark Dev</h1>
-  <p>Gamer | Developer | Creator</p>
-</section>
-
-<!-- SEZIONE AGGIUNTA -->
-<section class="hero">
-  <h1>Community</h1>
-</section>
-<section class="projects">
-  <div class="card">
-    <h3>Nomi</h3>
-    <p>Lista utenti</p>
-    <a class="btn4" href="nomi.html">Visualizza</a>
-  </div>
-</section>
-
-<!-- RESTO DEL CODICE ORIGINALE -->
-<section class="projects">
-  <div class="card">
-    <img src="https://prominencerpg.com/wp-content/uploads/2024/10/Prominence-II-RPG-Hasturian-Era.webp">
-    <h3>Prominence</h3>
-    <p>Hasturian Era</p>
-    <a class="btn1" href="https://rpg.prominence.wiki/hasturian-era" target="_blank">Wiki</a>
-  </div>
-  <div class="card">
-    <img src="https://tse3.mm.bing.net/th/id/OIP.6cGxNd9VaoR9cXcgVIfg_wHaEK">
-    <h3>Mimicer</h3>
-    <p>Minecraft Mod</p>
-    <a class="btn2" href="#">Download</a>
-  </div>
-  <div class="card">
-    <img src="https://img.freepik.com/premium-photo/discord-logo">
-    <h3>Discord</h3>
-    <p>Contattami</p>
-    <a class="btn3" href="https://discord.com/users/not_diana__" target="_blank">Apri</a>
-  </div>
-</section>
-
-<section class="hero">
-  <h1>Tools</h1>
-</section>
-<section class="projects">
-  <div class="card">
-    <h3>RedTiger</h3>
-    <p>Python</p>
-    <a class="btn1" href="https://github.com/NotDianaa/RedTiger?tab=GPL-3.0-1-ov-file">Apri</a>
-  </div>
-  <div class="card">
-    <h3>Launcher</h3>
-    <p>Dev launcher</p>
-    <a class="btn2" href="#">Download</a>
-  </div>
-</section>
-
-<section class="hero">
-  <h1>Mods</h1>
-</section>
-<section class="projects">
-  <div class="card">
-    <h3>The Broken Script</h3>
-    <p>2.0</p>
-    <a class="btn4" href="https://www.mediafire.com/file/fmgibx9fbenmlyx/The+Broken+Script+2.0+Trailer.mkv/file">Trailer</a>
-  </div>
-  <div class="card">
-    <h3>New Mod</h3>
-    <p>WIP</p>
-    <a class="btn3" href="#">Scopri</a>
-  </div>
-</section>
-
-<section class="hero">
-  <h1>Social</h1>
-</section>
-<section class="projects">
-  <div class="card">
-    <h3>YouTube</h3>
-    <p>Video</p>
-    <a class="btn6" href="#">Vai</a>
-  </div>
-  <div class="card">
-    <h3>GitHub</h3>
-    <p>Repo</p>
-    <a class="btn5" href="#">Apri</a>
-  </div>
-</section>
-
-<div class="terminal">
-  <p>[Diana@dev]$ system.boot</p>
-  <p>Loading modules...</p>
-  <p>Success ✔</p>
-  <p>[Diana@dev]$ connect server</p>
-  <p>Connected</p>
-</div>
-
-<footer>© 2026 Diana</footer>
-
-<script>
-tsParticles.load("tsparticles", {
-  particles: {
-    number: { value: 70 },
-    color: { value: "#ff1f1f" },
-    size: { value: 3 },
-    move: { enable: true, speed: 1 }
-  }
-});
-</script>
+    <div class="button-container">
+        <!-- Bottone Ahyeon (Viola) -->
+        <button class="btn btn-ahyeon" onclick="location.href='ahyeon.html'">Ahyeon</button>
+        
+        <!-- Bottone Asa (Verde) -->
+        <button class="btn btn-asa" onclick="location.href='asa.html'">Asa</button>
+        
+        <!-- Bottone Jennie (Blu) -->
+        <button class="btn btn-jennie" onclick="location.href='jennie.html'">Jennie</button>
+    </div>
 
 </body>
 </html>
