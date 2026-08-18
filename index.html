@@ -2,30 +2,26 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            margin: 0;
+            height: 100vh;
+            background-color: #000000;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
         }
-
         h1 {
-            color: #333;
             margin-bottom: 30px;
         }
-
         .button-container {
             display: flex;
             gap: 20px;
         }
-
         .btn {
             padding: 15px 30px;
             font-size: 18px;
@@ -34,27 +30,10 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            transition: transform 0.2s, opacity 0.2s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
-        }
-
-        /* Colori dei bottoni */
-        .btn-ahyeon {
-            background-color: #8A2BE2; /* Viola */
-        }
-
-        .btn-asa {
-            background-color: #2E8B57; /* Verde */
-        }
-
-        .btn-jennie {
-            background-color: #1E90FF; /* Blu */
-        }
+        .btn-ahyeon { background-color: #8A2BE2; }
+        .btn-asa { background-color: #2E8B57; }
+        .btn-jennie { background-color: #1E90FF; }
     </style>
 </head>
 <body>
@@ -62,14 +41,14 @@
     <h1>Benvenuto nel mio sito web</h1>
 
     <div class="button-container">
-        <!-- Bottone Ahyeon (Viola) -->
-        <button class="btn btn-ahyeon" onclick="location.href='ahyeon.html'">Ahyeon</button>
+        <!-- Bottone Ahyeon con link Instagram -->
+        <button class="btn btn-ahyeon" onclick="location.href='https://www.instagram.com/ahyeon.bm.private?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='">Ahyeon</button>
         
-        <!-- Bottone Asa (Verde) -->
+        <!-- Bottone Asa -->
         <button class="btn btn-asa" onclick="location.href='asa.html'">Asa</button>
         
-        <!-- Bottone Jennie (Blu) -->
-        <button class="btn btn-jennie" onclick="location.href='jennie.html'">Jennie</button>
+        <!-- Bottone Jennie con link Instagram -->
+        <button class="btn btn-jennie" onclick="location.href='https://www.instagram.com/jennie_kim_blk_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='">Jennie</button>
     </div>
 
 </body>
