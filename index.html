@@ -43,6 +43,8 @@
             width: 140px;
             text-align: center;
             display: inline-block;
+            cursor: pointer;
+            border: none;
         }
         .btn-ahyeon { background-color: #8A2BE2; }
         .btn-asa { background-color: #2E8B57; }
@@ -59,7 +61,7 @@
 
     <div class="sections-container">
         
-        <!-- Sezione Instagram (Funzionanti) -->
+        <!-- Sezione Instagram -->
         <div class="section">
             <span class="section-title">Instagram</span>
             <a href="https://www.instagram.com/ahyeon.bm.private" class="btn btn-ahyeon" target="_blank" rel="noopener noreferrer">Ahyeon</a>
@@ -67,12 +69,12 @@
             <a href="https://www.instagram.com/je_nnierubyjane_" class="btn btn-jennie" target="_blank" rel="noopener noreferrer">Jennie</a>
         </div>
 
-        <!-- Sezione Discord -->
+        <!-- Sezione Discord (Copia il nome utente per l'amicizia) -->
         <div class="section">
             <span class="section-title">Discord</span>
-            <button class="btn btn-ahyeon" onclick="alert('Nome utente Discord: hoshinoai_official_ds')">Ahyeon</button>
-            <button class="btn btn-asa" onclick="alert('Nome utente Discord: __asaaa_babymonster__')">Asa</button>
-            <button class="btn btn-jennie" onclick="alert('Nome utente Discord: je_nnierubyjane_')">Jennie</button>
+            <button class="btn btn-ahyeon" onclick="navigator.clipboard.writeText('hoshinoai_official_ds'); alert('Nome Discord copiato: hoshinoai_official_ds! Incollalo su Discord per l\'amicizia.');">Ahyeon</button>
+            <button class="btn btn-asa" onclick="navigator.clipboard.writeText('__asaaa_babymonster__'); alert('Nome Discord copiato: __asaaa_babymonster__! Incollalo su Discord per l\'amicizia.');">Asa</button>
+            <button class="btn btn-jennie" onclick="navigator.clipboard.writeText('je_nnierubyjane_'); alert('Nome Discord copiato: je_nnierubyjane_! Incollalo su Discord per l\'amicizia.');">Jennie</button>
         </div>
 
     </div>
