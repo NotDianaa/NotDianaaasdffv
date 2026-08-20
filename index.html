@@ -6,7 +6,7 @@
     <style>
         body {
             margin: 0;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #000000;
             display: flex;
             flex-direction: column;
@@ -14,19 +14,22 @@
             justify-content: center;
             font-family: Arial, sans-serif;
             color: white;
+            padding: 30px 0;
         }
         h1 {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         .sections-container {
             display: flex;
             gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
         }
         .section-title {
             font-size: 20px;
@@ -49,6 +52,10 @@
         .btn-ahyeon { background-color: #8A2BE2; }
         .btn-asa { background-color: #2E8B57; }
         .btn-jennie { background-color: #1E90FF; }
+        .btn-lisa { background-color: #FF1493; }
+        .btn-wonyoung { background-color: #FF8C00; }
+        .btn-jisoo { background-color: #DC143C; }
+        .btn-rose { background-color: #FF69B4; }
         
         .btn:hover {
             opacity: 0.8;
@@ -67,6 +74,10 @@
             <button class="btn btn-ahyeon" onclick="window.open('https://www.instagram.com/ahyeon.bm.private', '_blank')">Ahyeon</button>
             <button class="btn btn-asa" onclick="window.open('https://www.instagram.com/asa_mbbmprv.__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')">Asa</button>
             <button class="btn btn-jennie" onclick="window.open('https://www.instagram.com/jennie_kim_blk_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')">Jennie</button>
+            <button class="btn btn-lisa" onclick="window.open('https://www.instagram.com/lisa_lalisablk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')">Lisa</button>
+            <button class="btn btn-wonyoung" onclick="window.open('https://www.instagram.com/wonyoung.ivie.priv.jangs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')">Wonyoung</button>
+            <button class="btn btn-jisoo" onclick="window.open('https://www.instagram.com/jisoou.blk.priv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')">Jisoo</button>
+            <button class="btn btn-rose" onclick="window.open('https://www.instagram.com/roses_are_rosie', '_blank')">Rosé</button>
         </div>
 
         <!-- Sezione Discord -->
@@ -75,6 +86,10 @@
             <button class="btn btn-ahyeon" onclick="navigator.clipboard.writeText('hoshinoai_official_ds'); alert('Copiato: hoshinoai_official_ds');">Ahyeon</button>
             <button class="btn btn-asa" onclick="navigator.clipboard.writeText('__asaaa_babymonster__'); alert('Copiato: __asaaa_babymonster__');">Asa</button>
             <button class="btn btn-jennie" onclick="navigator.clipboard.writeText('je_nnierubyjane_'); alert('Copiato: je_nnierubyjane_');">Jennie</button>
+            <button class="btn btn-lisa" onclick="navigator.clipboard.writeText('lalisa_man.'); alert('Copiato: lalisa_man.');">Lisa</button>
+            <button class="btn btn-wonyoung" onclick="navigator.clipboard.writeText('wonyoung.lock'); alert('Copiato: wonyoung.lock');">Wonyoung</button>
+            <button class="btn btn-jisoo" onclick="navigator.clipboard.writeText('jisooblk_'); alert('Copiato: jisooblk_');">Jisoo</button>
+            <button class="btn btn-rose" onclick="navigator.clipboard.writeText('rose_blk_official_private'); alert('Copiato: rose_blk_official_private');">Rosé</button>
         </div>
 
     </div>
